@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student form</title>
+</head>
+<body>
+  <h3>Student reg form</h3>
+
+<form th:action="@{/processStudentForm}" th:object="${student}" method = "POST">
+
+  First name: <input  type="text" th:field ="*{firstName}"/>
+  Last name: <input  type="text" th:field ="*{lastName}"/>
+  <input type="submit" value="submit"/>
+</form>
+</body>
+</html>
